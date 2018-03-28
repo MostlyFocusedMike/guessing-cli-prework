@@ -1,5 +1,6 @@
 def check_guess(guess)
-  if rand(1..6) == guess.to_i
+  rand_num = rand(1..6)
+  if rand_num == guess.to_i
     puts "You guessed the correct number!"
   else
     puts "The computer guessed #{rand_num}."
